@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.mat-toolbar{
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar span a{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  padding: 0px 0px 0px 20px;
+}
+
+.mat-toolbar ul li a,button{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
