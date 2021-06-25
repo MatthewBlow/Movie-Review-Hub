@@ -1,27 +1,16 @@
-# APDSPOE
+A simple, yet very secure fullstack web application made using Angular, Node JS, Express and MongoDB
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+The website was made to be resistant against:
+  - Cross Site Scripting
+  - Injection Attacks
+  - Username Harvesting
+  - Brute Force Attacks
+  - Session Jacking
+  - Session Fixation
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The website makes use of the following tools and libraries
+  - mongoose (Used for data modeling, schema validation and data translation for MongoDB and NodeJS)
+  - bcrypt (Used for password hashing)
+  - JSON Web Token (Used for user authentication and authorization)
+  - multer (Used for uploading files)
+  - path (Used for navigating file paths) 
