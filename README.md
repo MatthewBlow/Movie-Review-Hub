@@ -1,3 +1,5 @@
+Web Application URL: http://movie-review-hub-bucket.s3-website.eu-west-2.amazonaws.com
+
 A simple, yet very secure fullstack web application made using Angular, Node JS, Express and MongoDB
 
 The website was made to be resistant against:
