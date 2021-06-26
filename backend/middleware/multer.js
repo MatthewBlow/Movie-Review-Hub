@@ -22,7 +22,7 @@ const storage = multer.diskStorage({
       error = null;
     }
     // Callback for where to store images
-    cb(null, "backend/images");
+    cb(null, "images");
   },
   // Setting the name of the image
   filename: (req, file, cb) => {

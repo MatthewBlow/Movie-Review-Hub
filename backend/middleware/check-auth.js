@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
     const token = req.headers.authorization.split(" ")[1];
     // Using JSON webtoken method .verify() to verify the token with the secret hashing string
     // Data stored in constant
-    const decodedToken = jwt.verify(token, "this_is_a_secret_string");
+    const decodedToken = jwt.verify(token, process.env.JWT_KEY);
     // Email and ID stored in the 'userData' request
     req.userData = {email: decodedToken.email, userID: decodedToken.userID };
     next();

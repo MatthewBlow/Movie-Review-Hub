@@ -66,7 +66,7 @@ exports.userLogin = (req, res, next) => {
       // Parameters using the email and id from the fetchedUser variable
       { email: fetchedUser.email, userID: fetchedUser._id },
       // The secret string that will be used to validate hashes
-      'this_is_a_secret_string',
+      process.env.JWT_KEY,
       {expiresIn: "1h" }
     );
     // Autheticated status response and JSON output

@@ -7,7 +7,7 @@ const postsRoutes = require("./routes/posts");
 const userRoutes = require("./routes/user");
 
 const app = express();
-const connString = "mongodb+srv://Matthew:uA6DFTfthuobOjt5@cluster0.aqrzy.mongodb.net/APDS_POE_Database";
+const connString = "mongodb+srv://Matthew:" + process.env.MONGO_ATLAS_PW + "@cluster0.aqrzy.mongodb.net/APDS_POE_Database";
 
 // Connect to database using mongoose to connect to the MongoDB through ExpressJS
 // Using MongoDB connection string
@@ -23,7 +23,7 @@ mongoose.connect(connString, {useNewUrlParser: true, useUnifiedTopology: true, u
 
 app.use(express.json()); // Function for JSON parsing
 app.use(express.urlencoded({extended: true})); // Function for URL parsing
-app.use("/images", express.static(path.join("backend/images"))) // Setting the image storing path
+app.use("/images", express.static(path.join("images"))) // Setting the image storing path
 
 // Declaring headers
 
